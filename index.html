@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <img
+        src="https://vectorskyinc.com/griglams/2020/09/logo-vectorsky2.png"
+        alt="company logo"
+      />
+      <h1 id="title">Customer Satisfaction Survey Form</h1>
+      <p id="description">Thank you for helping us providing a better service</p>
+    </div>
+    <form id="survey-form" action="#" method="post" autocomplete="off">
+      <fieldset id="fieldset-one">
+        <label id="name-label" for="name">Name</label
+        ><input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="your name"
+          required
+        />
+        <label id="email-label" for="email">Email</label
+        ><input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="your email"
+          required
+        />
+        <label id="number-label" for="number"
+          >Age (<span id="span-number">optional</span>)</label
+        ><input
+          type="number"
+          name="number"
+          id="number"
+          min="13"
+          max="120"
+          placeholder="your age"
+        />
+      </fieldset>
+      <fieldset id="fieldset-two">
+        <label for="dropdown">How did you hear about our products?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="" disabled selected>Select one that apply</option>
+          <option value="1">Word of Mouth</option>
+          <option value="2">Our Website</option>
+          <option value="3">Youtube Channel</option>
+          <option value="4">Instagram</option>
+          <option value="5">Facebook</option>
+        </select>
+      </fieldset>
+      <fieldset id="fieldset-three">
+        <div class="fieldset-three-title">
+          <label for="">Overall satisfaction of service</label>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <th></th>
+              <th class="table-first-row">
+                <label for="">Very Unsatisfied</label>
+              </th>
+              <th class="table-first-row"><label for="">Unsatisfied</label></th>
+              <th class="table-first-row"><label for="">Neutral</label></th>
+              <th class="table-first-row"><label for="">Satisfied</label></th>
+              <th class="table-first-row">
+                <label for="">Very Satisfied</label>
+              </th>
+            </tr>
+            <tr>
+              <th><label class="font-wt-400" for="">Friendliness</label></th>
+              <td>
+                <input
+                  type="radio"
+                  name="friendliness"
+                  value="very unsatisfied"
+                  id="radio-0-0"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="friendliness"
+                  value="unsatisfied"
+                  id="radio-1-0"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="friendliness"
+                  value="neutral"
+                  id="radio-2-0"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="friendliness"
+                  value="satisfied"
+                  id="radio-3-0"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="friendliness"
+                  value="very satisfied"
+                  id="radio-4-0"
+                /><label for=""></label>
+              </td>
+            </tr>
+            <tr>
+              <th><label class="font-wt-400" for="">Knowledge</label></th>
+              <td>
+                <input
+                  type="radio"
+                  name="knowledge"
+                  value="very unsatisfied"
+                  id="radio-0-1"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="knowledge"
+                  value="unsatisfied"
+                  id="radio-1-1"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="knowledge"
+                  value="neutral"
+                  id="radio-2-1"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="knowledge"
+                  value="satisfied"
+                  id="radio-3-1"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="knowledge"
+                  value="unsatisfied"
+                  id="radio-4-1"
+                /><label for=""></label>
+              </td>
+            </tr>
+            <tr>
+              <th><label class="font-wt-400" for="">Quickness</label></th>
+              <td>
+                <input
+                  type="radio"
+                  name="quickness"
+                  value="very unsatisfied"
+                  id="radio-0-2"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="quickness"
+                  value="unsatisfied"
+                  id="radio-1-2"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="quickness"
+                  value="neutral"
+                  id="radio-2-2"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="quickness"
+                  value="satisfied"
+                  id="radio-3-2"
+                /><label for=""></label>
+              </td>
+              <td>
+                <input
+                  type="radio"
+                  name="quickness"
+                  value="very satisfied"
+                  id="radio-4-2"
+                /><label for=""></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <fieldset id="fieldset-four">
+        <label id="fieldset-four-title" for=""
+          >Which improvement(s) do you wish to see in the future? <span id="span-checkbox">(check all
+            that applies)</span></label
+        >
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-1"
+            id="checkbox-1"
+            value="1"
+          /><label class="checkbox-label" for="checkbox-1">Reachability</label>
+        </div>
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-2"
+            id="checkbox-2"
+            value="2"
+          /><label class="checkbox-label" for="checkbox-2">Product Quality</label>
+        </div>
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-3"
+            id="checkbox-3"
+            value="3"
+          /><label class="checkbox-label" for="checkbox-3">Follow-ups</label>
+        </div>
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-4"
+            id="checkbox-4"
+            value="4"
+          /><label class="checkbox-label" for="checkbox-4">Options</label>
+        </div>
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-5"
+            id="checkbox-5"
+            value="5"
+          /><label class="checkbox-label" for="checkbox-5">Value for Money</label>
+        </div>
+        <div class="input-label">
+          <input
+            type="checkbox"
+            name="checkbox-6"
+            id="checkbox-6"
+            value="6"
+          /><label class="checkbox-label" for="checkbox-6">Credibility</label>
+        </div>
+      </fieldset>
+      <fieldset id="fieldset-five">
+        <div class="label-textarea">
+          <label for="textarea">Comment down below</label>
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="your commment here..."
+          ></textarea>
+        </div>
+      </fieldset>
+      <fieldset id="fieldset-six">
+        <input id="submit" type="submit" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
