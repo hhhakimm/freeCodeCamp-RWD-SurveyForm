@@ -1,0 +1,284 @@
+@media (min-width: 1025px) and (min-width: 1281px) {
+  ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: transparent;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: transparent;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: transparent;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: transparent;
+  }
+  input::placeholder {
+    color: transparent;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 800px;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(90deg, #0041a8, #3149b4, #4c7aaf);
+}
+
+img {
+  margin-top: 1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.048);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+}
+
+fieldset {
+  border: none;
+  margin: 1em;
+}
+
+/* Form */
+
+form {
+  width: 800px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Title */
+
+.title {
+  margin: 0 0 3em 0;
+}
+
+#title {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* fieldset-one */
+
+#fieldset-one {
+  padding-top: 2em;
+  margin-bottom: 4em;
+}
+
+#span-number {
+  font-weight: 500;
+  font-size: small;
+}
+
+#fieldset-one > label {
+  display: block;
+  max-width: fit-content;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+#fieldset-one > input {
+  margin: 1em;
+  padding: 0.2em;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #265994;
+}
+
+#fieldset-one > input:focus {
+  translate: 1em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #012969;
+}
+
+/* fieldset-two */
+
+#fieldset-two {
+  margin-bottom: 4em;
+}
+
+#fieldset-two > label {
+  display: block;
+  text-align: center;
+}
+
+#fieldset-two > select {
+  position: relative;
+  outline: none;
+  margin-top: 0.5em;
+  margin-left: 22em;
+  background: rgb(160, 160, 160);
+  border-radius: 5px;
+  color: black;
+}
+
+#fieldset-two > select:focus {
+  outline: none;
+  margin: 0.5 0 0 22em;
+  background: #363636;
+}
+
+/* fieldset-three */
+
+#fieldset-three {
+  margin-bottom: 4em;
+}
+
+.fieldset-three-title {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.font-wt-400 {
+  font-weight: 400;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(160, 160, 160);
+  border-color: #012969;
+}
+
+.table-first-row {
+  text-align: center;
+  margin: auto;
+}
+
+table > input {
+  display: table-cell;
+}
+
+tr:not(th) {
+  border: 1px solid black;
+}
+
+.table-first-row > label {
+  margin: auto;
+  font-weight: 400;
+}
+
+td {
+  border: 1px solid black;
+}
+
+/* fieldset-four */
+
+#fieldset-four {
+  margin-bottom: 4em;
+}
+
+#span-checkbox {
+  font-weight: 500;
+  font-size: small;
+}
+
+#fieldset-four > label[id=fieldset-four-title] {
+  display: block;
+}
+
+.input-label > input[type=checkbox] {
+  display: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 5px;
+}
+.checkbox-label:before {
+  line-height: 20px;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #666666;
+}
+
+input[type=checkbox]:checked + .checkbox-label:before,
+.checkbox-label:hover:before {
+  content: "\2713";
+  color: rgb(160, 160, 160);
+  text-align: center;
+  line-height: 16px;
+}
+
+.input-label {
+  display: block;
+  margin-top: 1em;
+}
+
+/* fieldset-five */
+
+#fieldset-five {
+  margin-bottom: 4em;
+}
+
+.label-textarea > label {
+  display: block;
+}
+
+.label-textarea > textarea {
+  margin-top: 1em;
+  background: rgb(160, 160, 160);
+  border: hidden;
+}
+
+.label-textarea > textarea:focus {
+  margin-top: 1em;
+  background: #555;
+  outline: none;
+  border: hidden;
+}
+
+/* fieldset-six */
+
+#fieldset-six {
+  margin-bottom: 4em;
+}
+
+#fieldset-six > input {
+  font-size: larger;
+  font-weight: 700;
+  width: 800px;
+  margin-left: -1.45em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: -1em;
+  border-radius: 0 0 16px 16px;
+  border: hidden;
+  background: rgb(160, 160, 160);
+} 
+
+#fieldset-six > input:hover {
+  background: #555;
+}
